@@ -1,0 +1,798 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Moderustic" !important;
+    transition: all .5s;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Geologica" !important;
+}
+
+li,
+p,
+a {
+    font-family: "Moderustic" !important;
+}
+
+.desktop {
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.mobile {
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+
+    display: none;
+}
+
+.cta {
+    @media screen and (max-width:430px) {
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: red;
+    color: #fff;
+    font-size: 32px;
+    height: 45px;
+    align-items: center;
+    width: 203px;
+    border-radius: 9px;
+    border: 2px solid #000;
+    text-shadow: -2px 2px 0px #000;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    transition: all .5s;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    left: 0;
+    border-bottom: 2px solid #000;
+
+    &.mobile-title {
+        @media screen and (max-width: 430px) {
+            padding: 4vw;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+#mobile-title {
+    h2 {
+        @media screen and (max-width: 430px) {
+            font-size: 6vw;
+        }
+
+        display: none;
+        font-size: 0;
+
+    }
+
+    img {
+        @media screen and (max-width: 430px) {
+            width: 13vw;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        display: none;
+        width: 0;
+    }
+}
+
+.open-close {
+    top: 0 !important;
+}
+
+.center-vertical {
+    top: 50% !important;
+    transform: translate(0, -50%);
+}
+
+.mobile-nav {
+    @media screen and (max-width: 430px) {
+        background: #fff;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        transition: all .5s;
+        top: -100%;
+        // top: 0;
+        display: block;
+    }
+
+    ul {
+        @media screen and (max-width: 430px) {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 0 !important;
+            padding: 0 0 0 80px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        li {
+            @media screen and (max-width: 430px) {
+                flex-basis: 100%;
+            }
+
+            a {
+                @media screen and (max-width: 430px) {
+                    font-size: 32px !important;
+                }
+            }
+        }
+    }
+}
+
+@import 'icons.less';
+
+
+.wrap {
+    max-width: 1728px;
+    margin: 0 auto;
+
+    header {
+        .fa-bars {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav {
+
+            .fa-times-circle-o {
+                position: absolute;
+                right: 40px;
+                top: 40px;
+            }
+
+            ul {
+                @media screen and (max-width: 1728px) {
+                    colmun-gap: 2.3vw;
+                    margin: 2vw 0;
+                }
+
+                list-style-type: none;
+                display: flex;
+                column-gap: 40px;
+                justify-content: center;
+                margin: 40px 0;
+
+                li {
+
+
+                    a {
+                        @media screen and (max-width: 1728px) {
+                            font-size: 1.4vw;
+                        }
+
+                        text-decoration: none;
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        div {
+            @media screen and (max-width: 1728px) {
+                column-gap: 5vw;
+            }
+
+            @media screen and (max-width: 430px) {
+                padding: 4vw 0;
+            }
+
+            display: flex;
+            justify-content: center;
+            column-gap: 80px;
+            align-items: center;
+            flex-wrap: wrap;
+
+            img {
+                @media screen and (max-width: 1728px) {
+                    width: 8.7vw;
+                }
+
+                @media screen and (max-width: 430px) {
+                    width: 23vw;
+                }
+            }
+
+            h1 {
+                @media screen and (max-width: 1728px) {
+                    font-size: 3.7vw;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 9.3vw;
+                    margin: 4vw 0;
+                    text-align: center;
+                }
+
+                font-size: 64px;
+            }
+
+            h2 {
+                @media screen and (max-width: 1728px) {
+                    font-size: 1.4vw;
+                    margin: 1vw 0;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 5.5vw;
+                    margin: 4vw 0;
+                }
+
+                flex-basis: 100%;
+                font-size: 24px;
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+    }
+
+
+    main {
+        section {
+            @media screen and (max-width: 1728px) {
+                column-gap: 2.5vw;
+                margin: 0 0 2.5vw;
+            }
+
+            @media screen and (max-width: 430px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0 0 4vw;
+            }
+
+            margin: 0 0 40px;
+            display: flex;
+            column-gap: 40px;
+            transition: all 1s;
+
+            figure {
+                figcaption {
+                    visibility: hidden;
+                }
+            }
+
+            div {
+                @media screen and (max-width: 430px) {
+                    flex-basis: 100%;
+                    margin: 20px 0 0;
+                }
+
+                flex-basis: 50%;
+
+                article {
+                    @media screen and (max-width: 1728px) {
+                        padding: 0 2.5vw;
+                    }
+
+                    padding: 0 40px;
+
+                    h2 {
+                        @media screen and (max-width: 1728px) {
+                            font-size: 1.8vw;
+                            margin: 0 0 1vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            font-size: 7vw;
+                            margin: 0 0 4vw;
+                        }
+
+                        text-transform: uppercase;
+                        font-size: 32px;
+                        text-align: center;
+                        margin: 0 0 20px;
+
+                        &:after {
+                            @media screen and (max-width: 1728px) {
+                                margin: 0 0 0 2.5vw;
+                            }
+
+                            @media screen and (max-width: 430px) {
+                                display: none;
+                            }
+
+                            content: '';
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                            margin: 0 0 0 40px;
+                        }
+                    }
+
+                    p {
+                        @media screen and (max-width: 1728px) {
+                            margin: 0 0 1vw;
+                            font-size: 1.4vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            font-size: 5.6vw;
+                            margin: 0 0 4vw;
+                        }
+
+                        text-align: center;
+                        font-size: 24px;
+                        line-height: normal;
+                        margin: 0 0 20px;
+                    }
+
+                    ul {
+                        @media screen and (max-width: 1728px) {
+                            margin: 0 0 1vw 2vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            margin: 10vw 0 10vw 10vw;
+                        }
+
+                        margin: 0 0 20px 40px;
+
+                        li {
+                            @media screen and (max-width: 1728px) {
+                                font-size: 1.4vw;
+                            }
+
+                            @media screen and (max-width: 430px) {
+                                font-size: 5.5vw;
+                            }
+
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            &#kung-fu {
+                figure {
+
+                    // width: 810px;
+                    img {
+                        @media screen and (max-width: 1728px) {
+                            width: 47vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            width: 61vw;
+                        }
+                    }
+                }
+
+                div {
+                    position: relative;
+
+                    article {
+                        @media screen and (max-width: 430px) {
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            transform: translate(0);
+                        }
+
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+
+                        h2 {
+                            &:after {
+                                @media screen and (max-width: 1728px) {
+                                    width: 3vw;
+                                    height: 7.5vw;
+                                }
+
+                                width: 48px;
+                                height: 129px;
+                                background-image: url('../imgs/kung-fu-character-1.png');
+                            }
+                        }
+                    }
+                }
+            }
+
+            &#class {
+                figure {
+                    @media screen and (max-width: 430px) {
+                        order: 1;
+                    }
+
+                    img {
+                        @media screen and (max-width: 1728px) {
+                            width: 48.6vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            width: 69vw;
+                        }
+                    }
+                }
+
+                div {
+                    @media screen and (max-width: 430px) {
+                        order: 2;
+                    }
+
+                    position: relative;
+
+                    article {
+
+                        h2 {
+                            &:after {
+                                @media screen and (max-width: 1728px) {
+                                    width: 5.3vw;
+                                    height: 5.7vw;
+                                }
+
+                                width: 88px;
+                                height: 101px;
+                                background-image: url('../imgs/kung-fu-character-2.png');
+                            }
+                        }
+
+                        p {
+                            @media screen and (max-width: 430px) {
+                                text-align: center;
+                            }
+
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            &#instructor {
+                figure {
+                    img {
+                        @media screen and (max-width: 1728px) {
+                            width: 48vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            width: 72vw;
+                        }
+                    }
+
+                }
+
+                div {
+                    position: relative;
+
+                    article {
+                        @media screen and (max-width: 430px) {
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            transform: translate(0);
+                        }
+
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+
+                        h2 {
+                            &:after {
+                                @media screen and (max-width: 1728px) {
+                                    width: 5.7vw;
+                                    height: 4.5vw;
+                                }
+
+                                width: 105px;
+                                height: 84px;
+                                background-image: url('../imgs/kung-fu-character-3.png');
+                            }
+                        }
+
+                        ul {
+                            @media screen and (max-width: 430px) {
+                                margin: 8vw;
+                            }
+
+                            justify-content: center;
+                            display: flex;
+                            margin: 0;
+
+                            li {
+                                ul {
+                                    @media screen and (max-width: 1728px) {
+                                        margin: 0 0 1vw 2vw;
+                                    }
+
+                                    @media screen and (max-width: 430px) {
+                                        margin: 6vw 8vw 0 8vw;
+                                        row-gap: 6vw;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                    }
+
+                                    display: block;
+                                    margin: 0 0 20px 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &#faqs {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                h2 {
+                    @media screen and (max-width: 1728px) {
+                        font-size: 2vw;
+                        margin: 0 0 2.5vw;
+                    }
+
+                    @media screen and (max-width: 430px) {
+                        font-size: 32px;
+                        margin: 0 0 20px;
+                    }
+
+                    flex-basis: 100%;
+                    font-size: 32px;
+                    text-align: center;
+                    margin: 0 0 40px;
+
+                    &:after {
+                        @media screen and (max-width: 1728px) {
+                            width: 13.5vw;
+                            height: 8.2vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            display: none;
+                        }
+
+                        content: '';
+                        width: 240px;
+                        height: 145px;
+                        background-image: url('../imgs/kung-fu-characters.png');
+                        background-repeat: no-repeat;
+                        margin: 0 0 0 40px;
+                        display: inline-block;
+                        background-size: contain;
+                    }
+                }
+
+                nav {
+                    ul {
+                        @media screen and (max-width: 430px) {
+                            margin: 0 12vw;
+                            row-gap: 6vw;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                    }
+
+                    li {
+                        @media screen and (max-width: 1728px) {
+                            margin: 0 0 1vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            margin: 0;
+                        }
+
+                        margin: 0 0 20px;
+
+                        a {
+                            @media screen and (max-width: 1728px) {
+                                font-size: 1.4vw;
+                            }
+
+                            @media screen and (max-width: 430px) {
+                                font-size: 5.5vw;
+                            }
+
+                            font-size: 24px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            &#register {
+                @media screen and (max-width: 1440px) {
+                    width: 90%;
+                }
+
+                @media screen and (max-width: 430px) {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    box-shadow: none;
+                    z-index: 99999;
+                }
+
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                height: 75%;
+                background: #fff;
+                padding: 40px;
+                border: 2px solid #000;
+                border-radius: 2vw;
+                box-shadow: -7px 7px 0px #000;
+                display: none;
+
+                .fa-times-circle-o {
+                    position: absolute;
+                    top: -1vw;
+                    right: 0vw;
+                    background: #fff;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            div {
+                @media screen and (max-width: 430px) {
+                    margin: 8vw 0 0;
+                }
+
+                article {
+                    h3 {
+                        @media screen and (max-width: 1728px) {
+                            font-size: 1.9vw;
+                            margin: 0 0 1vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            font-size: 7vw;
+                            text-align: center;
+                            margin: 0 0 4vw;
+                        }
+
+                        font-size: 32px;
+                        text-transform: capitalize;
+                        text-align: left;
+                        margin: 0 0 20px;
+                    }
+
+                    p {
+                        @media screen and (max-width: 1728px) {
+                            // font-size: 1.4vw;
+                            // margin: 0 0 1vw;
+                        }
+
+                        @media screen and (max-width: 430px) {
+                            // font-size: 24px;
+                            text-align: center;
+                            // margin: 0 0 4vw;
+                        }
+
+                        // font-size: 24px;
+                        // line-height: normal;
+                        text-align: left;
+                        // margin: 0 0 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    text-align: center;
+
+    img {
+        @media screen and (max-width: 1728px) {
+            width: 8.7vw;
+        }
+
+        @media screen and (max-width: 430px) {
+            width: 23vw;
+        }
+    }
+
+    section {
+        @media screen and (max-width: 1728px) {
+            margin: 2.5vw 0;
+        }
+
+        @media screen and (max-width: 430px) {
+            margin: 8vw 0;
+        }
+
+        margin: 40px 0;
+
+        article {
+            h2 {
+                @media screen and (max-width: 1728px) {
+                    font-size: 1.9vw;
+                    margin: 0 0 1vw;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 7vw;
+                    margin: 0 0 6vw;
+                }
+
+                font-size: 32px;
+                margin: 0 0 20px;
+            }
+
+            h3 {
+                @media screen and (max-width: 1728px) {
+                    font-size: 1.4vw;
+                    margin: 0 0 1vw;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 5.5vw;
+                    margin: 0 0 6vw;
+                }
+
+                font-size: 24px;
+                margin: 0 0 20px;
+            }
+
+            p {
+                @media screen and (max-width: 1728px) {
+                    font-size: 1.4vw;
+                }
+
+                @media screen and (max-width: 430px) {
+                    font-size: 5.5vw;
+                }
+
+                font-size: 24px;
+                line-height: normal;
+
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
