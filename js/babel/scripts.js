@@ -7,7 +7,7 @@ $(document).ready(function () {
     a: "The kung fu class is <b>FREE</b><br class=\"mobile\"> for OLM students."
   }, {
     q: "When and where is the<br class=\"mobile\"> kung fu class?",
-    a: "Classes will be held after school at OLM on Wednesdays from 3:30pm-4:30pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class=\"mobile\"> old club house room."
+    a: "Classes will be held after school at OLM on Tuesdays from 3:30pm-4:30pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class=\"mobile\"> old club house room."
   }, {
     q: "What is the age limit?",
     a: "The Age limit is 9 and up"
