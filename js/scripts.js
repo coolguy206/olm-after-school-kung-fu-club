@@ -11,15 +11,15 @@ $(document).ready(function () {
         },
         {
             q: `When and where is the<br class="mobile"> kung fu class?`,
-            a: `Classes will be held after school at OLM on Tuesdays from 3:30pm-4:30pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class="mobile"> old club house room.`
+            a: `Classes will be held after school at OLM on Tuesdays from 3pm-4pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class="mobile"> old club house room.`
         },
         {
             q: `What is the age limit?`,
             a: `The Age limit is 9 and up`
         },
         {
-            q: `Will there be a OLM teacher?`,
-            a: `OLM teachers will be nearby because of after school care.`
+            q: `Will there be OLM staff onsite?`,
+            a: `OLM STAFF will be nearby because of OLM after care clubhouse.`
         },
         {
             q: `Will my child get hurt?<br class="mobile"> Is it safe?`,
