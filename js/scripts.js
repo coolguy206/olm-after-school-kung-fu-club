@@ -7,7 +7,7 @@ $(document).ready(function () {
     var faqs = [
         {
             q: `How much is the<br class="mobile"> kung fu class?`,
-            a: `The kung fu class is <b>FREE</b><br class="mobile"> for OLM students.`
+            a: `The kung fu class is <b>FREE</b><br class="mobile"> for OLM students who are in CLUBHOUSE.`
         },
         {
             q: `When and where is the<br class="mobile"> kung fu class?`,
