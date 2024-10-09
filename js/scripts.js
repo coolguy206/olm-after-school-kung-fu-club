@@ -7,19 +7,19 @@ $(document).ready(function () {
     var faqs = [
         {
             q: `How much is the<br class="mobile"> kung fu class?`,
-            a: `The kung fu class is <b>FREE</b><br class="mobile"> for OLM students who are in CLUBHOUSE.`
+            a: `The kung fu class is <b>FREE</b><br class="mobile"> for OLM students who are in <b>CLUBHOUSE</b>.`
         },
         {
             q: `When and where is the<br class="mobile"> kung fu class?`,
-            a: `Classes will be held after school at OLM on Tuesdays from 3pm-4pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class="mobile"> old club house room.`
+            a: `Classes will be held after school at OLM on Tuesdays from 3:15pm-4:15pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class="mobile"> old club house room.`
         },
         {
             q: `What is the age limit?`,
             a: `The Age limit is 9 and up`
         },
         {
-            q: `Will there be OLM staff onsite?`,
-            a: `OLM STAFF will be nearby because of OLM after care clubhouse.`
+            q: `Will there be an OLM staff member present?`,
+            a: `Yes, a Clubhouse staff member will be in the same area as the class.`
         },
         {
             q: `Will my child get hurt?<br class="mobile"> Is it safe?`,
