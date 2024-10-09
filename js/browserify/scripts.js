@@ -5,7 +5,7 @@ var $ = require('jquery');
 $(document).ready(function () {
   var faqs = [{
     q: "How much is the<br class=\"mobile\"> kung fu class?",
-    a: "The kung fu class is <b>FREE</b><br class=\"mobile\"> for OLM students who are in <b>CLUBHOUSE</b>."
+    a: "The kung fu class is <b>FREE</b><br class=\"mobile\"> of charge for OLM students who are in <b>CLUBHOUSE</b>. <b>Non-Clubhouse</b> students need to pay the <b>Clubhouse drop-in fee</b>."
   }, {
     q: "When and where is the<br class=\"mobile\"> kung fu class?",
     a: "Classes will be held after school at OLM on Tuesdays from 3:15pm-4:15pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class=\"mobile\"> old club house room."
