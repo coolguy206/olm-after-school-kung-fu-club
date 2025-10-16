@@ -69,7 +69,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 999;
+    z-index: 99;
     left: 0;
     border-bottom: 2px solid #000;
 
@@ -266,6 +266,9 @@ a {
 
 
     main {
+        display: flex;
+        flex-wrap: wrap;
+
         section {
             @media screen and (max-width: 1728px) {
                 column-gap: 2.5vw;
@@ -382,6 +385,8 @@ a {
             }
 
             &#kung-fu {
+                order: 2;
+
                 figure {
 
                     // width: 810px;
@@ -445,6 +450,7 @@ a {
                                     @media screen and (max-width: 430px) {
                                         margin: 0 0 0 10vw;
                                     }
+
                                     display: block;
                                 }
                             }
@@ -454,6 +460,9 @@ a {
             }
 
             &#class {
+                order: 1;
+                align-items: normal;
+
                 figure {
                     @media screen and (max-width: 430px) {
                         order: 1;
@@ -494,6 +503,19 @@ a {
 
                         h3 {
                             text-align: center;
+
+                            &.program {
+                                @media screen and (max-width: 1728px) {
+                                    padding: 0 8vw 0 0;
+                                }
+
+                                @media screen and (max-width: 430px) {
+                                    padding: 0;
+                                }
+
+                                padding: 0 160px 0 0;
+                            }
+
                         }
 
                         p {
@@ -508,7 +530,15 @@ a {
             }
 
             &#instructor {
+                order: 3;
+
                 figure {
+                    @media screen and (max-width: 430px) {
+                        order: 1;
+                    }
+
+                    order: 2;
+
                     img {
                         @media screen and (max-width: 1728px) {
                             width: 48vw;
@@ -522,6 +552,10 @@ a {
                 }
 
                 div {
+                    @media screen and (max-width: 430px) {
+                        order: 2;
+                    }
+
                     position: relative;
 
                     article {
@@ -586,6 +620,7 @@ a {
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: start;
+                order: 4;
 
                 h2 {
                     @media screen and (max-width: 1728px) {
@@ -671,7 +706,7 @@ a {
                     height: 100%;
                     border: none;
                     box-shadow: none;
-                    z-index: 99999;
+                    // z-index: 99999;
                 }
 
                 position: fixed;
@@ -686,6 +721,7 @@ a {
                 border-radius: 2vw;
                 box-shadow: -7px 7px 0px #000;
                 display: none;
+                z-index: 99;
 
                 .fa-times-circle-o {
                     position: absolute;
@@ -712,7 +748,7 @@ a {
                 article {
                     h3 {
                         @media screen and (max-width: 1728px) {
-                            font-size: 1.9vw;
+                            font-size: 1.7vw;
                             margin: 0 0 2vw;
                         }
 
@@ -722,7 +758,7 @@ a {
                             margin: 0 0 4vw;
                         }
 
-                        font-size: 32px;
+                        font-size: 30px;
                         text-transform: capitalize;
                         text-align: left;
                         margin: 0 0 40px;

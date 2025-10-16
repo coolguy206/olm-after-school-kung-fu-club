@@ -1,17 +1,25 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
+var _tagline = _interopRequireDefault(require("./tagline"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var $ = require('jquery');
 $(document).ready(function () {
+  // console.log(tagline.length)
+
+  var num = Math.floor(Math.random() * 11);
+  // console.log(num);
+
+  $('.tagline').html(_tagline["default"][num]);
   var faqs = [{
     q: "How much is the<br class=\"mobile\"> kung fu class?",
-    a: "The kung fu class is <b>FREE</b><br class=\"mobile\"> of charge for OLM students who are in <b>CLUBHOUSE</b>. <b>Non-Clubhouse</b> students need to pay the <b>Clubhouse drop-in fee</b>."
+    a: "The kung fu class is offered <b>FREE</b> of charge to OLM students enrolled in <b>CLUBHOUSE</b>; however, if a clubhouse student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied.<br><br> Non-Clubhouse students are also welcome at a cost of <b>$200</b>."
   }, {
     q: "When and where is the<br class=\"mobile\"> kung fu class?",
-    a: "Classes will be held after school at OLM on Tuesdays from 3:15pm-4:15pm. On nice days the class will be held outside in the lower yard. On rainy days the class will be held inside the<br class=\"mobile\"> old club house room."
+    a: "Classes will be held after school at OLM on Tuesdays from 3:15pm-4:15pm in the old clubhouse room at OLM."
   }, {
     q: "What is the age limit?",
-    a: "The Age limit is 9 and up"
+    a: "We are accepting students in grades 4-8"
   }, {
     q: "Will there be an OLM staff member present?",
     a: "Yes, a Clubhouse staff member will be in the same area as the class."
@@ -32,10 +40,10 @@ $(document).ready(function () {
     a: "The child should wear loose comfortable clothes like athletic wear or sweats and gym shoes"
   }, {
     q: "Can my child quit<br class=\"mobile\"> at anytime?",
-    a: "Yes"
+    a: "Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied. Non-Clubhouse students will <b>NOT</b> be charged <b>$200</b> if they do not complete the full 10 weeks."
   }, {
     q: "Will there be weapons?",
-    a: "Baat Ying Baat Fut does have various traditional weapons but the children will not be learning<br class=\"mobile\"> any weapons."
+    a: "Baat Ying Baat Fut does have various traditional weapons but the children will not be learning<br class=\"mobile\"> any weapons at this time."
   }];
   $(faqs).each(function (i, val) {
     // console.log(i);
@@ -112,7 +120,18 @@ $(document).ready(function () {
 });
 
 
-},{"jquery":2}],2:[function(require,module,exports){
+},{"./tagline":2,"jquery":3}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var tagLine = ["Unleash Your Inner Warrior:<br> Transform Mind and Body Through the Art of Kung Fu", "Discover Your Hidden Power:<br> Elevate Your Spirit and Strength with Kung Fu Mastery", "Embrace Your Inner Champion:<br> Cultivate Discipline and Confidence Through Kung Fu", "Awaken the Warrior Within:<br> Achieve Balance and Resilience with Traditional Kung Fu", "Unlock Your True Potential:<br> Empower Mind and Body with the Art of Kung Fu", "Ignite Your Inner Fire:<br> Foster Focus and Flexibility Through Kung Fu Training", "Embark on a Journey of Strength:<br> Build Confidence and Calmness with Kung Fu", "Tap Into Your Inner Hero:<br> Develop Courage and Clarity Through Kung Fu Practice", "Channel Your Inner Force:<br> Enhance Fitness and Focus with Kung Fu Techniques", "Awaken the Power Within:<br> Transform Yourself Inside and Out with Kung Fu", "Discover the Warrior’s Path:<br> Strengthen Body and Mind with the Art of Kung Fu"];
+var _default = exports["default"] = tagLine;
+
+
+},{}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
