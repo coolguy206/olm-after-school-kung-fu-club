@@ -52,7 +52,7 @@ $(document).ready(function () {
         },
         {
             q: `Can my child quit<br class="mobile"> at anytime?`,
-            a: `Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied. Non-Clubhouse students will <b>NOT</b> be charged <b>$200</b> if they do not complete the full 10 weeks.`
+            a: `Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied.`
         },
         {
             q: `Will there be weapons?`,
