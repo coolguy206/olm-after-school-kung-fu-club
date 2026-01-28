@@ -16,7 +16,7 @@ $(document).ready(function () {
     var faqs = [
         {
             q: `How much is the<br class="mobile"> kung fu class?`,
-            a: `The kung fu class is offered <b>FREE</b> of charge to OLM students enrolled in <b>CLUBHOUSE</b>; however, if a clubhouse student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied.<br><br> Non-Clubhouse students are also welcome at a cost of <b>$200</b>.`
+            a: `The kung fu class is offered <b>FREE</b> of charge to OLM students enrolled in <b>CLUBHOUSE</b>; however, if a clubhouse student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$50</b> will be applied.<br><br> Non-Clubhouse students are also welcome at a cost of <b>$50</b>.`
         },
         {
             q: `When and where is the<br class="mobile"> kung fu class?`,
@@ -52,7 +52,7 @@ $(document).ready(function () {
         },
         {
             q: `Can my child quit<br class="mobile"> at anytime?`,
-            a: `Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied.`
+            a: `Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$50</b> will be applied.`
         },
         {
             q: `Will there be weapons?`,

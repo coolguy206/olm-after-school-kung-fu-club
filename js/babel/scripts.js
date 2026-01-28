@@ -12,7 +12,7 @@ $(document).ready(function () {
   $('.tagline').html(_tagline["default"][num]);
   var faqs = [{
     q: "How much is the<br class=\"mobile\"> kung fu class?",
-    a: "The kung fu class is offered <b>FREE</b> of charge to OLM students enrolled in <b>CLUBHOUSE</b>; however, if a clubhouse student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied.<br><br> Non-Clubhouse students are also welcome at a cost of <b>$200</b>."
+    a: "The kung fu class is offered <b>FREE</b> of charge to OLM students enrolled in <b>CLUBHOUSE</b>; however, if a clubhouse student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$50</b> will be applied.<br><br> Non-Clubhouse students are also welcome at a cost of <b>$50</b>."
   }, {
     q: "When and where is the<br class=\"mobile\"> kung fu class?",
     a: "Classes will be held after school at OLM on Tuesdays from 3:15pm-4:15pm in the old clubhouse room at OLM."
@@ -39,7 +39,7 @@ $(document).ready(function () {
     a: "The child should wear loose comfortable clothes like athletic wear or sweats and gym shoes"
   }, {
     q: "Can my child quit<br class=\"mobile\"> at anytime?",
-    a: "Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$200</b> will be applied."
+    a: "Yes, however if a <b>CLUBHOUSE</b> student <b>DOES NOT COMPLETE</b> the full 10 weeks, a fee of <b>$50</b> will be applied."
   }, {
     q: "Will there be weapons?",
     a: "Baat Ying Baat Fut does have various traditional weapons but the children will not be learning<br class=\"mobile\"> any weapons at this time."
